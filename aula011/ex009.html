@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qual país você vive?</title>
+    </head>
+    <body>
+        <h1>Escolha seu país abaixo e direi se você é estrangeiro ou não</h1>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+            
+        </div>
+        
+        
+        <script>
+        /*var país = 'EUA'
+        console.log(`Vivendo em ${país}`)
+        if (país == 'Brasil'){
+            console.log(`Você é Brasileiro!`)
+        } else{
+            console.log(`Você é Etrangeiro`)
+        }
+        */
+        function verificar(){
+            var txtp = document.getElementById('txtpais')
+            var res = document.getElementById('res')
+            var real = txtp.value;
+            if (real == 'Brasil'){
+                res.innerHTML = `<h2>BRASILEIIIIRO</h2>`
+
+            } else{
+                res.innerHTML = `<h2>Você é estrangeiro</h2>`
+            }
+
+        }
+    </script>
+</body>
+</html>
