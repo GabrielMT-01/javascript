@@ -15,15 +15,20 @@
         
         
         <script>
-        /*var país = 'EUA'
-        console.log(`Vivendo em ${país}`)
-        if (país == 'Brasil'){
-            console.log(`Você é Brasileiro!`)
-        } else{
-            console.log(`Você é Etrangeiro`)
-        }
-        */
         function verificar(){
+            var txtp = document.getElementById('txtpais')
+            
+            var res = document.getElementById('res')
+            var real = txtp.value;
+            if (real == 'Brasil'){
+                res.innerHTML = ' <h2>Você é BRASILEIIIIIIIROOOOO</h2>'
+            } else{
+                res.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+        }
+        
+
+        /*function verificar(){
             var txtp = document.getElementById('txtpais')
             var res = document.getElementById('res')
             var real = txtp.value;
@@ -34,7 +39,7 @@
                 res.innerHTML = `<h2>Você é estrangeiro</h2>`
             }
 
-        }
+        } */
     </script>
 </body>
 </html>
