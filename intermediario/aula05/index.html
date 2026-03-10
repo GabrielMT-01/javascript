@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 Projeto Tabuada</title>
+</head>
+<body>
+    
+    <script>
+        let hora = Number(prompt('Digite a hora do dia entre 1 e 24'))
+
+        document.write('-----BORA ESTUDAR TABUADA! <br><br>')
+
+        if (hora <= 12){
+            document.write('<h1>Bom dia!</h1>')
+            document.write('<br>')
+            document.write('********************************')
+            document.write('<br> De manhã é bom estudar 4 tabuadas!')
+            document.write('<br> <br>')
+
+
+            for(let n0 = 1; n0 <=4; n0++){
+                document.write(`A ${n0}º Tabuada foi do ${n0}`)
+                document.write('<br>')
+                for(let n1 = 1; n1 <=10; n1++){
+                    const mult = n1 * n0
+                    document.write(`${n0} x ${n1} = ${mult} <br>`)
+                }
+            }
+
+
+
+
+
+        } else if (hora > 12 && hora < 18){
+            document.write('<h1>Boa tarde!</h1>')
+            document.write('<br>')
+            document.write('********************************')
+            document.write('<br> De tarde é bom estudar 3 tabuadas!')
+            document.write('<br> <br>')
+            let tarde = 0
+
+            for (n0 = 5; n0 <= 7; n0++){
+                tarde++;
+                document.write(`A ${tarde}º Tabuada foi do ${n0}`)
+                document.write('<br>')
+                for(let n1 = 1; n1 <=10; n1++){
+                    const mult = n1 * n0
+                    document.write(`${n0} x ${n1} = ${mult} <br>`)
+                }
+            }
+
+        } else{
+            document.write('<h1>Boa noite!</h1>')
+            document.write('<br>')
+            document.write('********************************')
+            document.write('<br> De noite é bom estudar 3 tabuadas!')
+            document.write('<br> <br>')
+            let noite = 0
+
+            for (n0 = 8; n0 <= 10; n0++){
+                noite++;
+                document.write(`A ${noite}º Tabuada foi do ${n0}`)
+                document.write('<br>')
+                for(let n1 = 1; n1 <=10; n1++){
+                    const mult = n1 * n0
+                    document.write(`${n0} x ${n1} = ${mult} <br>`)
+                }
+                document.write('<br>')
+            }
+        }
+    </script>
+</body>
+</html>

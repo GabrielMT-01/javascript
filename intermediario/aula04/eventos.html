@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 Eventos</title>
+    <style>
+        div#local{
+            font: normal 20pt Arial;
+            color: rgb(47, 231, 231);
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="local">
+
+    </div>
+
+    <script>
+        let local = document.getElementById('local')
+        local.addEventListener('click', clicar)
+        local.addEventListener('mouseenter', entrar)
+        local.addEventListener('mouseout', sair)
+        function clicar(){
+            local.innerText= 'Clicou no local!';
+            local.style.background='#800060';
+        }
+
+        function entrar(){
+            local.innerText= 'Entrou no local!';
+           
+        }
+
+        function sair(){
+            local.innerText= 'Saiu do local!';
+            
+        }
+    </script>
+</body>
+</html>
